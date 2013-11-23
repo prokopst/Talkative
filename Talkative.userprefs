@@ -1,0 +1,42 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Talkative/Node.cs">
+    <Files>
+      <File FileName="Talkative/Conversation.cs" Line="11" Column="4" />
+      <File FileName="Talkative/Group.cs" Line="27" Column="5" />
+      <File FileName="Talkative/Node.cs" Line="24" Column="72" />
+      <File FileName="Talkative/Talk.cs" Line="15" Column="22" />
+      <File FileName="Talkative/IGameInterface.cs" Line="7" Column="1" />
+      <File FileName="Talkative/Conditions/IsNumberEqualTo.cs" Line="15" Column="26" />
+      <File FileName="Talkative/Conditions/ICondition.cs" Line="11" Column="1" />
+      <File FileName="Talkative/Actions/IAction.cs" Line="12" Column="1" />
+      <File FileName="Talkative.Tests/TestConversation.cs" Line="19" Column="22" />
+      <File FileName="Talkative/Actions/SetTrue.cs" Line="8" Column="24" />
+      <File FileName="Talkative.Tutorial/Main.cs" Line="18" Column="10" />
+      <File FileName="Talkative.Tutorial/MyGameWorld.cs" Line="31" Column="34" />
+      <File FileName="Talkative/Actions/IsTrue.cs" Line="18" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Talkative" expanded="True" />
+          <Node name="Talkative.Tests" expanded="True" />
+          <Node name="Talkative.Tutorial" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

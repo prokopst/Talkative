@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B20BABE-2F94-4927-B49A-F887E676B7F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Talkative</RootNamespace>
+    <AssemblyName>Talkative</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IGameInterface.cs" />
+    <Compile Include="ConversationFactory.cs" />
+    <Compile Include="Core\Actions\IAction.cs" />
+    <Compile Include="Core\Actions\SetTrue.cs" />
+    <Compile Include="Core\Conditions\ICondition.cs" />
+    <Compile Include="Core\Conditions\IsNumberEqualTo.cs" />
+    <Compile Include="Reaction.cs" />
+    <Compile Include="Core\Conversation.cs" />
+    <Compile Include="Core\Group.cs" />
+    <Compile Include="Core\Node.cs" />
+    <Compile Include="Core\Actions\IncrementNumber.cs" />
+    <Compile Include="Core\Conditions\IsTrue.cs" />
+    <Compile Include="Core\Actions\SetString.cs" />
+    <Compile Include="Core\Conditions\IsStringEqualTo.cs" />
+    <Compile Include="Core\Conditions\IsFalse.cs" />
+    <Compile Include="Core\Speech.cs" />
+    <Compile Include="Core\Speeches.cs" />
+    <Compile Include="Core\Groups.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+</Project>
