@@ -13,4 +13,4 @@ Features
 To Do
 -----
 
-Check the [https://github.com/prokopst/Talkative/issues](list of issues).
+Check the [list of issues](https://github.com/prokopst/Talkative/issues).
