@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<Conversation>
+    <Groups>
+        <Group id="start">
+            <Node targetGroup="i0">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>What do you want?</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Co chceš?</Text>
+                    </Speech>
+                </Speeches>
+                <Actions>
+                    <SetTrue key="introducer.have_talked" />
+                </Actions>
+            </Node>
+            <Node targetGroup="i0">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>Oh god... can't you give me a rest?</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Proboha... copak mi nemůžeš dát pokoj?</Text>
+                    </Speech>
+                </Speeches>
+                <Conditions>
+                    <IsTrue key="introducer.have_talked" />
+                </Conditions>
+            </Node>
+        </Group>
+        <Group id="i0">
+            <Node targetGroup="o1">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>Who are you?</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Kdo jsi?</Text>
+                    </Speech>
+                </Speeches>
+            </Node>
+            <Node exit="true">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>No mood to talk? Maybe later...</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Nemáš náladu na povídání? Třeba později...</Text>
+                    </Speech>
+                </Speeches>
+            </Node>
+        </Group>
+        <Group id="o1">
+            <Node targetGroup="i0">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>I am Talkative example NPC. I am rude, bad and so on.</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Jsem Talkative ukázkový nehratelný charakter. Jsme nerudný, špatný a tak.</Text>
+                    </Speech>
+                </Speeches>
+                <Actions>
+                    <SetTrue key="introducer.knows_talkative" />
+                </Actions>
+            </Node>
+            <Node targetGroup="i0">
+                <Speeches>
+                    <Speech lang="en-US">
+                        <Text>Talkative! Talkative! How many times do you need to hear that?!</Text>
+                    </Speech>
+                    <Speech lang="cs-CS">
+                        <Text>Talkative! Talkative! Kolikrát ti to mám opakovat?!</Text>
+                    </Speech>
+                </Speeches>
+                <Conditions>
+                    <IsTrue key="introducer.knows_talkative" />
+                </Conditions>
+            </Node>
+        </Group>
+    </Groups>
+</Conversation>

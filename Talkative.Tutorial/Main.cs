@@ -44,9 +44,8 @@ namespace Talkative.Tutorial
 
 		public static void Main (string[] args)
 		{
-			Assembly assembly = typeof(IAction).Assembly;
-			Type type = assembly.GetType("Talkative.Core.Actions.SetTrue");
-			object obj = Activator.CreateInstance(type);
+			string dialogFilename = Path.Combine("..", "..", "conversation.xml");
+
 			// Create interface to game logic
 			IGameInterface gameInterface = new MyGameInterface();
 
@@ -55,13 +54,13 @@ namespace Talkative.Tutorial
 			string[] langs = {"en-US"};
 			ConversationFactory factory = new ConversationFactory(gameInterface, langs);
 			// Load conversation. The result is first NPC's reaction.
-			Reaction npcReaction = factory.LoadConversationFromPath("conversation.xml");
+			Reaction npcReaction = factory.LoadConversationFromPath(dialogFilename);
 			// Variable for user's reaction
 			Reaction userReaction = null;
 			// List of possible reactions that will be read by user
 			IList<Reaction> reactions = null;
 
-			// We will end this loop within body
+			// We will end this loop within the body
 			while (true)
 			{
 				// Print NPC's reaction
